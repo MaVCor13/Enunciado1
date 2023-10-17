@@ -3,79 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Clima</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        main {
-            flex-grow: 1;
-            display: flex;
-        }
-
-        .weather-section {
-            flex: 1;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-
-        .transport-section {
-            flex: 1;
-            background-color: #e0e0e0;
-            padding: 20px;
-        }
-
-        .section-title {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .weather-data {
-            margin-top: 10px;
-        }
-
-        .transport-data {
-            margin-top: 10px;
-        }
-    </style>
+    <title>Reloj Vistoso</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dashboard de Clima</h1>
-    </header>
-    <main>
-        <section class="weather-section">
-            <h2 class="section-title">Clima</h2>
-            <div class="weather-data">
-                <p><strong>Ciudad:</strong> Ciudad Ejemplo</p>
-                <p><strong>Temperatura:</strong> 25°C</p>
-                <p><strong>Humedad:</strong> 50%</p>
-                <p><strong>Viento:</strong> 10 km/h</p>
-                <p><strong>Condiciones:</strong> Soleado</p>
-            </div>
-        </section>
-        <section class="transport-section">
-            <h2 class="section-title">Transporte</h2>
-            <div class="transport-data">
-                <p><strong>Tráfico:</strong> Ligero</p>
-                <p><strong>Próximo autobús:</strong> 5 minutos</p>
-                <p><strong>Estación de metro más cercana:</strong> Estación A</p>
-                <p><strong>Horario de tren:</strong> Cada 15 minutos</p>
-            </div>
-        </section>
-    </main>
+    <div class="clock-container">
+        <div class="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center"></div>
+        </div>
+    </div>
 </body>
 </html>
+
